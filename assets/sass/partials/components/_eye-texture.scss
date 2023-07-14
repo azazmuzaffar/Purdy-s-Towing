@@ -1,0 +1,31 @@
+.eye-texture {
+
+    &--gray {
+        background: #E2E2E2;
+    }
+
+    &--green {
+        background: $green;
+    }
+
+    &>.image-ratio {
+        padding-top: 7.24%;
+
+        @include md {
+            padding-top: 12%;
+        }
+
+        @include xs {
+            padding-top: 17.24%;
+        }
+    }
+
+    &--green {
+        background: $green;
+
+        img {
+            mix-blend-mode: screen;
+            opacity: 0.18;
+        }
+    }
+}

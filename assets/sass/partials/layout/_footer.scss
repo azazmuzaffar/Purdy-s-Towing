@@ -1,0 +1,130 @@
+.site-footer {
+    color: $white;
+
+    &__nav {
+        background: $green;
+        padding: 92px 0 45px;
+
+        @include xs {
+            padding: 60px 0;
+        }
+    }
+
+    &__links {
+        h6 {
+            font-size: 21px;
+            line-height: 1.3;
+            margin-bottom: 28px;
+            @extend .font-bold;
+
+            @include xxs {
+                font-size: 20px;
+            }
+        }
+
+        &--inner {
+
+            li,
+            p {
+                font-size: 17px;
+                line-height: 1.352;
+            }
+
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 23px;
+
+                    @include xs {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 24px;
+
+                        @include xs {
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                    a {
+                        color: $white;
+
+                        &:hover {
+                            text-underline-offset: 4px;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--end {
+            position: relative;
+
+
+            @include xxl-up {
+                padding-left: 80px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 340px;
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 27px 0 25px;
+        background: $darkgreen;
+
+        @include xs {
+            padding: 24px 0;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.352;
+
+            @include xs {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    @include xxl-up {
+        .col-left {
+            width: 48%;
+        }
+
+        .col-right {
+            width: 52%;
+        }
+
+        .col-left-left {
+            width: 52%;
+        }
+
+        .col-left-right {
+            width: 48%;
+        }
+
+        .col-right-left {
+            width: 55%;
+        }
+
+        .col-right-right {
+            width: 45%;
+        }
+    }
+}

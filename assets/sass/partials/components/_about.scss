@@ -1,0 +1,117 @@
+.about-us {
+    position: relative;
+    padding: 52px 0 55px;
+
+    @include xs {
+        padding: 60px 0;
+    }
+
+    @include sm {
+        background: #E2E2E2;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+            mix-blend-mode: screen;
+        }
+    }
+
+    &__content {
+        &--title {
+
+            h2 {
+                position: relative;
+                z-index: 2;
+            }
+
+            h3,
+            .h1 {
+                line-height: 2.4;
+                color: $lightgray;
+                margin: -56px 0 45px 40px;
+
+                @include xs {
+                    margin-top: -16px;
+                }
+            }
+        }
+
+        &--description {
+            width: 100%;
+            max-width: 595px;
+
+            @include sm {
+                max-width: 100%;
+            }
+        }
+
+        &--links {
+            margin-top: 38px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                li {
+                    position: relative;
+                    padding: 8px 0;
+                    color: $green;
+                    line-height: 1;
+                    @extend .font-roboto-condensed;
+
+                    @include sm {
+                        padding: 4px 0;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 36px;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 48%;
+                        right: -21px;
+                        transform: translateY(-50%);
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg id='Rectangle_198' data-name='Rectangle 198' fill='none' stroke='%2355c0c2' stroke-width='1'%3E%3Crect width='8' height='8' stroke='none'/%3E%3Crect x='0.5' y='0.5' width='7' height='7' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 7px;
+                        height: 7px;
+                    }
+
+                    &:last-of-type {
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        color: inherit;
+
+                        &:hover {
+                            text-underline-offset: 4px;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

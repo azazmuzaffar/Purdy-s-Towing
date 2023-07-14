@@ -1,0 +1,48 @@
+// Colors
+$black: #000;
+$white: #fff;
+$green: #55C0C2;
+$darkgreen: #007574;
+$gray: #484848;
+$lightgray: #ACA9A9;
+
+.text-white {
+    color: $white;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-lightgray {
+    color: $lightgray;
+}
+
+.text-darkgreen {
+    color: $darkgreen;
+}
+
+// Fonts
+$font-roboto: 'Roboto';
+$font-roboto-condensed: 'Roboto Condensed';
+$font-betterworks: 'Betterworks';
+
+.font-roboto {
+    font-family: $font-roboto;
+}
+
+.font-roboto-condensed {
+    font-family: $font-roboto-condensed;
+}
+
+.font-betterworks {
+    font-family: $font-betterworks;
+}
