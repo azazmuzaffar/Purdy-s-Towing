@@ -3,6 +3,13 @@
     background: $white;
     padding: 75px 0;
 
+    &--green {
+        background: $darkgreen;
+
+        p {
+            color: $white !important;
+        }
+    }
 
     .container {
         position: relative;
@@ -29,7 +36,6 @@
         margin: 0 auto;
         z-index: 2;
 
-
         @include lg {
             max-width: 1000px;
         }
@@ -52,6 +58,10 @@
 
         .page-cognitive-therapy & {
             max-width: 1122px;
+        }
+
+        .page-services & {
+            max-width: 1262px
         }
 
         P {
