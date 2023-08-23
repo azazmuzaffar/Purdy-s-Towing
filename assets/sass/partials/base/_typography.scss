@@ -125,8 +125,30 @@ p,
         color: $white !important;
         background: $green;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: $green;
+        }
+    }
+
+    &-outline-primary {
+        font-size: 31px;
+        line-height: 1;
+        font-weight: bold;
+        @extend .font-roboto-condensed;
+        padding: 12px 49px;
+        color: $green;
+        border-radius: 60px;
+        border: 2px solid #0A7775;
+
+        @include xs {
+            font-size: 21px;
+            padding: 10px 32px;
+        }
+
+        &:hover {
+            background: #0A7775;
+            border-color: #0A7775;
         }
     }
 

@@ -1,0 +1,49 @@
+.additional-resources {
+    padding: 75px 0 120px;
+    background: #DDDDDD;
+
+    @include md {
+        padding: 60px 0 80px;
+    }
+
+    @include xs {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__all {
+        .title-block {
+            margin-bottom: 24px;
+        }
+
+        .list-block {
+            ul {
+                li {
+                    color: #484848;
+
+                    a {
+                        color: #484848;
+                        text-decoration: underline;
+                        transition: .3s all ease;
+                        font-style: italic;
+
+                        &:hover {
+                            color: $green;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 28px;
+
+                        @include xs {
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

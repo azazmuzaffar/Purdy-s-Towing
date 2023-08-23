@@ -1,0 +1,72 @@
+.free-pages {
+    position: relative;
+    background: $white;
+    padding-bottom: 72px;
+
+    @include lg {
+        padding-top: 24px;
+    }
+
+    @include xs {
+        padding-top: 38px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            color: $green;
+
+            span {
+                @include xs {
+                    font-size: 4.5vw;
+                }
+            }
+        }
+
+        p {
+            color: $gray;
+            margin-top: -28px;
+
+            @include sm {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__all {
+        margin-top: 72px;
+
+        @include lg {
+            margin-top: 48px;
+        }
+
+        .row {
+            @include sm {
+                flex-wrap: wrap;
+
+                .col {
+                    width: 33.33%;
+                    flex: 1 0 33.33%;
+                }
+            }
+
+            @include xs {
+                .col {
+                    flex: 1 0 50%;
+                }
+            }
+        }
+
+        &--each {
+            .image-wrapper {
+                border: 2px solid $black;
+
+                .image-ratio {
+                    padding-top: 122%;
+                }
+            }
+        }
+    }
+}

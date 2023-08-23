@@ -1,0 +1,42 @@
+.intake {
+    padding: 72px 0;
+    background: $darkgreen;
+
+    @include xs {
+        padding: 60px 0;
+    }
+
+    &__title {
+        text-align: right;
+
+        h2 {
+            line-height: 1;
+        }
+    }
+
+    &__body {
+        color: $white;
+
+        &>p {
+            margin-bottom: 40px;
+        }
+
+        .btn-wrapper {
+            margin: 40px 0 0;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .existing-client {
+            margin-top: 48px;
+
+            a {
+                text-decoration: underline;
+                color: $green !important;
+                font-style: italic;
+            }
+        }
+    }
+}
