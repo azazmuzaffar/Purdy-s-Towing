@@ -5,6 +5,8 @@ $green: #55C0C2;
 $darkgreen: #007574;
 $gray: #484848;
 $lightgray: #ACA9A9;
+$lightbrown: #A37744;
+$darkbrown: #7B572E;
 
 .text-white {
     color: $white;
@@ -28,6 +30,14 @@ $lightgray: #ACA9A9;
 
 .text-darkgreen {
     color: $darkgreen;
+}
+
+.text-lightbrown {
+    color: $lightbrown;
+}
+
+.text-darkbrown {
+    color: $darkbrown;
 }
 
 // Fonts

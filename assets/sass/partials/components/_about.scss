@@ -101,13 +101,10 @@
                         }
                     }
 
+                    p,
                     a {
                         color: inherit;
-
-                        &:hover {
-                            text-underline-offset: 4px;
-                            text-decoration: underline;
-                        }
+                        margin: 0;
                     }
                 }
             }

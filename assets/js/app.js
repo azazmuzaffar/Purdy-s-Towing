@@ -77,3 +77,8 @@ growTl.to(".hero__bg--img", {
   scale: 1.2,
   transformOrigin: "50% 50%",
 });
+
+AOS.init({
+  once: true,
+  duration: 1200,
+});

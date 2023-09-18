@@ -86,12 +86,12 @@
         &--title {
             h1 {
                 position: relative;
-                margin: 0 0 48px 27px;
-                line-height: 1.8;
+                margin: 0 0 32px 0;
+                line-height: 2.2;
                 z-index: 1;
 
                 @include xs {
-                    margin: 0 0 40px 14px;
+                    margin: 0 0 30px 14px;
                     line-height: 2;
                 }
 

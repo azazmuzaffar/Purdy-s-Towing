@@ -1,6 +1,6 @@
 .intake {
     padding: 72px 0;
-    background: $darkgreen;
+    background: $lightbrown;
 
     @include xs {
         padding: 60px 0;
@@ -26,6 +26,11 @@
 
             .btn {
                 width: 100%;
+
+                .btn {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
             }
         }
 
@@ -34,7 +39,7 @@
 
             a {
                 text-decoration: underline;
-                color: $green !important;
+                color: #4B2D0B !important;
                 font-style: italic;
             }
         }

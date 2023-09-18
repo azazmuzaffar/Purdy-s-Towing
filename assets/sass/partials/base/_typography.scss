@@ -128,6 +128,7 @@ p,
         &:hover,
         &:focus {
             background: $green;
+            box-shadow: 0 0 0 0.25rem #55c0c262;
         }
     }
 
@@ -146,9 +147,11 @@ p,
             padding: 10px 32px;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: #0A7775;
             border-color: #0A7775;
+            box-shadow: 0 0 0 0.25rem #0a77755d;
         }
     }
 
@@ -156,8 +159,34 @@ p,
         color: $white !important;
         background: $gray;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: $gray;
+            box-shadow: 0 0 0 0.25rem #48484863;
+        }
+    }
+
+
+    &-darkbrown {
+        color: $white !important;
+        background: $darkbrown;
+
+        &:hover,
+        &:focus {
+            background: $darkbrown;
+            box-shadow: 0 0 0 0.25rem #7b572e63;
+        }
+    }
+
+
+    &-lightbrown {
+        color: $white !important;
+        background: $lightbrown;
+
+        &:hover,
+        &:focus {
+            background: $lightbrown;
+            box-shadow: 0 0 0 0.25rem #a377445e;
         }
     }
 

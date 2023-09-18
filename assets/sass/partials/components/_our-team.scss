@@ -44,6 +44,10 @@
     &__each {
         border: 3px solid $white;
 
+        .image-wrapper {
+            background-color: #ACA9A9;
+        }
+
         .text-wrapper {
             color: $white;
             background: $green;

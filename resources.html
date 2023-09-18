@@ -16,6 +16,10 @@
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" media="all" />
 
+    <!-- Aos - Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- >>> Custom CSS <<< -->
     <link rel="stylesheet" href="./assets/sass/main.css" />
   </head>
@@ -76,8 +80,8 @@
         </div>
         <!-- Hero Patterns -->
         <div class="hero__pattern">
-          <img src="./assets/img/resources/hero--texture--top-right.svg" alt="" class="hero__pattern--each hero__pattern--each__1" />
-          <img src="./assets/img/staff/hero--texture--bottom-left.svg" alt="" class="hero__pattern--each hero__pattern--each__2" />
+          <img src="./assets/img/resources/hero--texture--top-right-brown.svg" alt="" class="hero__pattern--each hero__pattern--each__1" />
+          <img src="./assets/img/resources/hero--texture--bottom-left-brown.svg" alt="" class="hero__pattern--each hero__pattern--each__2" />
         </div>
       </div>
     </section>
@@ -88,22 +92,22 @@
       <div class="container">
         <div class="row gy-5 gy-xxl-0 gx-xxl-5">
           <div class="col-xxl-3">
-            <div class="intake__title text-green text-start text-xxl-end">
+            <div class="intake__title text-darkbrown text-start text-xxl-end">
               <h2 class="text-uppercase">Intake</h2>
             </div>
           </div>
           <div class="col-xxl-9">
             <div class="intake__body">
               <p>Browse our intake and general orientation packet to get help today.</p>
-              <div class="btn-wrapper">
+              <div class="btn-wrapper" data-aos="fade-up">
                 <div class="row gy-3 gy-lg-0">
-                  <div class="col-xl-3"><a href="#" class="btn btn-primary btn-has-arrow">INTAKE PACKET</a></div>
-                  <div class="col-xl-3"><a href="#" class="btn btn-primary btn-has-arrow">INTAKE PACKET</a></div>
-                  <div class="col-xl-3"><a href="#" class="btn btn-primary btn-has-arrow">INTAKE PACKET</a></div>
-                  <div class="col-xl-3"><a href="#" class="btn btn-primary btn-has-arrow">INTAKE PACKET</a></div>
+                  <div class="col-xl-3"><a href="#" class="btn btn-darkbrown btn-has-arrow text-start">INTAKE PACKET</a></div>
+                  <div class="col-xl-3"><a href="#" class="btn btn-darkbrown btn-has-arrow text-start">BROCHURE</a></div>
+                  <div class="col-xl-3"><a href="#" class="btn btn-darkbrown btn-has-arrow text-start">MINOR CONSENT</a></div>
+                  <div class="col-xl-3"><a href="#" class="btn btn-darkbrown btn-has-arrow text-start">PRIVACY NOTICE</a></div>
                 </div>
               </div>
-              <div class="existing-client">
+              <div class="existing-client" data-aos="fade-up">
                 <p>Are you an existing client? <a href="#">Update or change your personal information here.</a></p>
               </div>
             </div>
@@ -119,11 +123,11 @@
         <div class="row gy-5 gy-xl-0">
           <div class="col-xl-5">
             <div class="health-aid__title">
-              <h2>
+              <h2 class="text-lightbrown">
                 BEHAVIORAL <br />
                 HEALTH AID
               </h2>
-              <h1>Program</h1>
+              <h1 class="text-lightbrown">Program</h1>
             </div>
           </div>
           <div class="col-xl-7">
@@ -133,15 +137,27 @@
                   <img src="./assets/img/resources/health-aid.png" alt="" />
                 </div>
                 <div class="overlay">
-                  <p>Behavioral Health Aide/Practioners use a combination of Western and traditional-based Practices to provide behavioral health prevention, treatment and recovery services to Alaska Native populations in rural Alaska.</p>
+                  <p data-aos="fade-up">
+                    Behavioral Health Aide/Practioners use a combination of Western and traditional-based Practices to provide behavioral health prevention, treatment and recovery services to Alaska Native populations in rural Alaska.
+                  </p>
                   <div class="btn-wrapper text-end">
-                    <a href="#" class="btn btn-primary btn-has-arrow d-none d-md-table ms-auto">Learn More at AKCHAP.ORG</a>
-                    <a href="#" class="btn btn-primary btn-has-arrow d-md-none w-100">More at AKCHAP.ORG</a>
+                    <a href="#" class="btn btn-lightbrown btn-has-arrow d-none d-md-table ms-auto">Learn More at AKCHAP.ORG</a>
+                    <a href="#" class="btn btn-lightbrown btn-has-arrow d-md-none w-100">More at AKCHAP.ORG</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="text-wrapper mt-5">
+          <p data-aos="fade-up">
+            The Behavioral Health Aide (BHA) Program grew out of the statewide “counselor-in-every village” initiative to provide behavioral health prevention, treatment, and recovery services in rural Alaska. The BHA program was founded by the
+            Alaska Native Tribal Health Consortium (ANTHC) in 2009 and modeled after the Community Health Aide Program (CHAP), which was established to assess and provide emergent, acute, and chronic medical care to residents in rural communities.
+            <br /><br />
+            ANTHC is a consortium of 18 Tribal Health Organizations (THOs) within the state of Alaska. THOs created and tasked the Tribal Behavioral Health Directors Committee (TBHDC) with identifying community health priorities in areas such as
+            domestic violence, sexual assault, substance use, suicide, and historical trauma. Through the guidance and leadership of the TBHDC, the BHA Program aims to improve behavioral health outcomes by addressing the various training needs of the
+            BHA workforce established to assess and provide emergent, acute, and chronic medical care to residents in rural communities.
+          </p>
         </div>
       </div>
     </div>
@@ -152,7 +168,7 @@
       <div class="container">
         <div class="a-message__inner">
           <h2>WIL LA MOOTK</h2>
-          <p>
+          <p data-aos="fade-up">
             Is proud to offer Zywave; Pressley Ridge; First Aid; CPR; Mandt; Alaska Native Tribal Health Consortium Behavioral Health Aid Programs, Foster programs, and the rest of the information here is placeholder until we get further details.
           </p>
         </div>
@@ -169,42 +185,59 @@
             <span class="h1">Coloring</span>
             Pages
           </h2>
-          <p>These coloring pages are free for your use and suitable for all ages.</p>
+          <p data-aos="fade-up">
+            These coloring pages are free for your use and suitable for all ages. <br />
+            Artist: William J. Bolton, Gamaas from Metlakatla, Alaska.
+          </p>
+          <div class="btn-wrapper mt-5">
+            <a href="#" class="btn btn-darkbrown d-none d-xl-table mx-auto" data-aos="fade-up">DOWNLOAD THE FULL COLORING BOOK HERE</a>
+            <a href="#" class="btn btn-darkbrown d-xl-none" data-aos="fade-up">DOWNLOAD COLORING BOOK HERE</a>
+          </div>
         </div>
-        <div class="free-pages__all">
+        <div class="free-pages__all" data-aos="fade-up">
           <div class="row gy-3 gy-md-4 gy-lg-0 gx-3 gx-md-4">
             <div class="col">
               <div class="free-pages__all--each">
                 <div class="image-wrapper">
-                  <div class="image-ratio image-ratio--square"></div>
+                  <div class="image-ratio image-ratio--square">
+                    <img src="./assets/img//resources/book-1.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="free-pages__all--each">
                 <div class="image-wrapper">
-                  <div class="image-ratio image-ratio--square"></div>
+                  <div class="image-ratio image-ratio--square">
+                    <img src="./assets/img//resources/book-2.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="free-pages__all--each">
                 <div class="image-wrapper">
-                  <div class="image-ratio image-ratio--square"></div>
+                  <div class="image-ratio image-ratio--square">
+                    <img src="./assets/img//resources/book-3.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="free-pages__all--each">
                 <div class="image-wrapper">
-                  <div class="image-ratio image-ratio--square"></div>
+                  <div class="image-ratio image-ratio--square">
+                    <img src="./assets/img//resources/book-4.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="free-pages__all--each">
                 <div class="image-wrapper">
-                  <div class="image-ratio image-ratio--square"></div>
+                  <div class="image-ratio image-ratio--square">
+                    <img src="./assets/img//resources/book-5.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -217,14 +250,14 @@
     <!-- Additional Resources Starts here -->
     <div class="additional-resources">
       <div class="container">
-        <div class="additional-resources__title text-green">
+        <div class="additional-resources__title text-lightbrown">
           <h2 class="text-uppercase">ADDITIONAL RESOURCES</h2>
         </div>
         <div class="additional-resources__all">
           <div class="row gy-5 gy-xl-0">
             <div class="col-xl-5">
-              <div class="additional-resources__all--tools">
-                <div class="title-block text-green">
+              <div class="additional-resources__all--tools" data-aos="fade-up">
+                <div class="title-block text-darkbrown">
                   <h4 class="font-roboto-condensed text-uppercase">FLYERS, PACKETS & TOOLS</h4>
                 </div>
                 <div class="list-block">
@@ -237,8 +270,8 @@
               </div>
             </div>
             <div class="col-xl-7">
-              <div class="additional-resources__all--web">
-                <div class="title-block text-green">
+              <div class="additional-resources__all--web" data-aos="fade-up">
+                <div class="title-block text-darkbrown">
                   <h4 class="font-roboto-condensed text-uppercase">WEB RESOURCES</h4>
                 </div>
                 <div class="row gy-4 gy-lg-0">
@@ -360,9 +393,9 @@
                     <h6>ABOUT WIL LA MOOTK</h6>
                     <div class="site-footer__links--inner">
                       <ul class="list-reset">
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="staff.html">Our Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="events.html">Events</a></li>
                         <li><a href="#">Confidentially Policy</a></li>
                         <li><a href="#">Feedback & Suggestions Survey</a></li>
                         <li><a href="#">Metlakatla.com</a></li>

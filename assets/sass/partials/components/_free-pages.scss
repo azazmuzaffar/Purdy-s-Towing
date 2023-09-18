@@ -16,7 +16,7 @@
         text-align: center;
 
         h2 {
-            color: $green;
+            color: $lightbrown;
 
             span {
                 @include xs {
@@ -54,14 +54,14 @@
 
             @include xs {
                 .col {
-                    flex: 1 0 50%;
+                    flex: 1 0 100%;
                 }
             }
         }
 
         &--each {
             .image-wrapper {
-                border: 2px solid $black;
+                border: 2px solid $lightbrown;
 
                 .image-ratio {
                     padding-top: 122%;

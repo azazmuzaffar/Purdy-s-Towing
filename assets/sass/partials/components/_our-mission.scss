@@ -35,7 +35,7 @@
         h1 {
             line-height: 2.4;
             width: fit-content;
-            margin: -68px 20px 0 133px;
+            margin: -68px 0px 0 133px;
 
             @include xs {
                 margin-top: -28px;
@@ -98,6 +98,11 @@
     position: relative;
     background: $white;
 
+    .order-two {
+        @include md {
+            order: 2;
+        }
+    }
 
     &__title {
         text-align: right;
