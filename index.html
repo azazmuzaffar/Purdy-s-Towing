@@ -16,9 +16,8 @@
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" media="all" />
 
-    <!-- Aos - Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- >>> Swiper v10 | Slider <<< -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- >>> Custom CSS <<< -->
     <link rel="stylesheet" href="./assets/sass/main.css" />
@@ -26,431 +25,209 @@
   <body class="page-home">
     <!-- Site Header Start here -->
     <header class="site-header">
-      <nav class="navbar navbar-expand-xl">
-        <div class="container">
-          <a class="site-logo" href="#">
-            <img src="./assets/img/site-logo.svg" alt="" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="navbar-toggler__inner">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <ul class="list-reset">
-                <li><a class="nav-link active" href="./index.html">Home</a></li>
-                <li><a class="nav-link" href="./services.html">Services</a></li>
-                <li><a class="nav-link" href="./foster-program.html">Foster Program</a></li>
-                <li><a class="nav-link" href="./staff.html">Staff</a></li>
-                <li><a class="nav-link" href="./events.html">Events</a></li>
-                <li><a class="nav-link" href="./resources.html">Resources</a></li>
-                <li><a class="nav-link" href="./careers.html">Careers</a></li>
-                <li><a class="nav-link" href="./contact-us.html">Contact</a></li>
-                <li><a class="btn btn-primary btn-has-arrow btn-sm" href="#">ENROLL NOW</a></li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="site-header__inner">
+          <a href="#" class="site-header__logo h2">Purdy’s Towing</a>
+          <div class="site-header__actions">
+            <p class="h2"><i>CALL NOW</i><a href="tel:+19072476481">907-247-6481</a></p>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
     <!-- Site Header Ends here -->
 
-    <!-- Hero Start here -->
-    <section class="hero">
+    <!-- Site Hero Start here -->
+    <section class="site-hero">
       <div class="container">
-        <!-- Hero Backgrounds -->
-        <div class="hero__bg">
-          <img class="hero__bg--img" src="./assets/img/home/hero-bg.png" alt="" />
-          <div class="hero__bg--gradient"></div>
+        <div class="site-hero__bg">
+          <img src="./assets/img/hero-bg.png" alt="" />
         </div>
-        <!-- Hero All Content -->
-        <div class="hero__content text-white">
-          <!-- Title -->
-          <div class="hero__content--title">
-            <h2>YOUR STORY</h2>
-            <h1>Isn’t Over Yet;</h1>
-          </div>
-          <hr />
-          <!-- Description -->
-          <div class="hero__content--description">
-            <p>
-              Taking care of our mental health is just as important as <br />
-              taking care of our physical health.
-            </p>
-            <p>Wil La Mootk Counseling Center is here to break the mental health stigma.</p>
-            <p>Gyilks Amaniisgn — Take Care of Yourself.</p>
-          </div>
-          <!-- Call to Action -->
+        <div class="site-hero__content">
           <div class="btn-wrapper">
-            <a href="#" class="btn btn-primary btn-has-arrow">ENROLL NOW</a>
+            <a href="#" class="btn btn-purple">CALL NOW</a>
           </div>
         </div>
-        <!-- Hero Patterns -->
-        <div class="hero__pattern">
-          <img src="./assets/img/home/hero-texture--top-left.svg" alt="" class="hero__pattern--each hero__pattern--each__1" />
-          <img src="./assets/img/home/hero--texture--top-right.svg" alt="" class="hero__pattern--each hero__pattern--each__2" />
-          <img src="./assets/img/home/hero--texture--bottom-right.svg" alt="" class="hero__pattern--each hero__pattern--each__3" />
+        <div class="site-hero__pattern">
+          <img src="./assets/img/hero-pattern.svg" alt="" />
         </div>
       </div>
     </section>
-    <!-- Hero End here -->
-
-    <!-- Services Start here -->
-    <section class="services text-green">
-      <div class="container">
-        <div class="row align-items-center gy-5 gy-xl-0">
-          <div class="col-xl-3">
-            <!-- About - Content -->
-            <div class="services__content">
-              <p data-aos="fade-up">At Wil La Mootk, we will build up your mental fitness with a licensed and trained mental health professional for both children and adults.</p>
-            </div>
-          </div>
-          <div class="col-xl-9">
-            <!-- About - Services -->
-            <div class="services__services">
-              <!-- About - Services # 1 -->
-              <div class="services__services--each text-center">
-                <div class="icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
-                    <defs>
-                      <clipPath id="clip-path">
-                        <rect id="Rectangle_27" data-name="Rectangle 27" width="71" height="71" transform="translate(0 0.494)" fill="currentColor" />
-                      </clipPath>
-                    </defs>
-                    <g id="Group_16" data-name="Group 16" transform="translate(-0.153 -0.495)">
-                      <g id="Group_15" data-name="Group 15" transform="translate(0.153 0.001)" clip-path="url(#clip-path)">
-                        <path
-                          id="Path_1789"
-                          data-name="Path 1789"
-                          d="M215.04,161.348a34.333,34.333,0,0,1-13.622,5.5c-6.383,1.047-12.141,2.273-16.878,6.779-3.779,3.639-6.1,8.631-6.1,22.713a10.354,10.354,0,0,0,2.707,5.476,59.289,59.289,0,0,1,20.069-22.98,1.3,1.3,0,1,1,1.481,2.145,57.454,57.454,0,0,0-19.15,21.818c12.984.766,24.333-4.443,30.04-16.8a33.665,33.665,0,0,0,1.455-24.653"
-                          transform="translate(-145.244 -131.308)"
-                          fill="currentColor"
-                        />
-                        <path
-                          id="Path_1790"
-                          data-name="Path 1790"
-                          d="M13.294,165.858a30.074,30.074,0,0,1-11.86-4.647c-5.682,16.112,5.885,38.365,28.47,34.228a66.477,66.477,0,0,0-17.8-17.49,1.277,1.277,0,0,1,1.43-2.068,70.216,70.216,0,0,1,17.21,16.341,43.387,43.387,0,0,1,2.094-13.277,20.846,20.846,0,0,0-4.877-7.328c-4.1-3.818-8.873-4.839-14.669-5.758"
-                          transform="translate(-0.029 -131.196)"
-                          fill="currentColor"
-                        />
-                        <path
-                          id="Path_1791"
-                          data-name="Path 1791"
-                          d="M108.625,33.934,124.8,17.567A10.224,10.224,0,0,0,110.438,3.013l-.907.906a1.277,1.277,0,0,1-1.812,0l-.894-.894A10,10,0,0,0,99.688,0C90.649,0,86.117,11.12,92.5,17.554Z"
-                          transform="translate(-72.877 0)"
-                          fill="currentColor"
-                        />
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <h6>Outpatient Therapy</h6>
-              </div>
-              <!-- About - Services # 2 -->
-              <div class="services__services--each text-center">
-                <div class="icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="79.007" height="62.833" viewBox="0 0 79.007 62.833">
-                    <g id="Group_160" data-name="Group 160" transform="translate(-0.122 -0.109)">
-                      <path
-                        id="Path_1787"
-                        data-name="Path 1787"
-                        d="M12.4,136.932A35.594,35.594,0,0,1,16.3,120.7,24.713,24.713,0,0,0,4.35,154.756L1.09,165.5a2.38,2.38,0,0,0,2.968,2.968L14.8,165.211a24.763,24.763,0,0,0,15.161,2.528A35.833,35.833,0,0,1,12.4,136.932"
-                        transform="translate(-0.865 -105.763)"
-                        fill="#55c0c2"
-                      />
-                      <path
-                        id="Path_1788"
-                        data-name="Path 1788"
-                        d="M190.151,46.575a31.048,31.048,0,1,0-12.772,12.771l14.071,4.268a2.38,2.38,0,0,0,2.968-2.968ZM166.322,43.1h-14.41a2.38,2.38,0,0,1,0-4.76h14.41a2.38,2.38,0,0,1,0,4.76m7.262-8.775H151.912a2.38,2.38,0,1,1,0-4.759h21.672a2.38,2.38,0,1,1,0,4.759m0-8.774H151.912a2.38,2.38,0,0,1,0-4.76h21.672a2.38,2.38,0,1,1,0,4.76"
-                        transform="translate(-115.392 -0.774)"
-                        fill="#55c0c2"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <h6>Therapeutic</h6>
-              </div>
-              <!-- About - Services # 3 -->
-              <div class="services__services--each text-center">
-                <div class="icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="104.048" height="52.793" viewBox="0 0 104.048 52.793">
-                    <path
-                      id="Path_1792"
-                      data-name="Path 1792"
-                      d="M19.452.629a4.319,4.319,0,0,0-1.719.11L9.359,2.983a4.335,4.335,0,0,0-3.065,5.31l.559,2.091a2.168,2.168,0,0,1-1.533,2.651L3.228,13.6a4.336,4.336,0,0,0-3.066,5.31L6.894,44.036A4.336,4.336,0,0,0,12.2,47.1l2.092-.559a2.168,2.168,0,0,1,2.659,1.533l.559,2.092a4.336,4.336,0,0,0,5.31,3.065L31.2,50.988a4.336,4.336,0,0,0,3.065-5.31l-4.19-15.63A2.407,2.407,0,0,1,31.546,27.2a62.919,62.919,0,0,1,40.984,0A2.408,2.408,0,0,1,74,30.049l-4.19,15.63a4.336,4.336,0,0,0,3.065,5.31l8.375,2.244a4.336,4.336,0,0,0,5.31-3.065l.559-2.092a2.168,2.168,0,0,1,2.659-1.533l2.092.559a4.336,4.336,0,0,0,5.31-3.065l6.732-25.125a4.336,4.336,0,0,0-3.066-5.31l-2.092-.567a2.168,2.168,0,0,1-1.533-2.651l.559-2.091a4.335,4.335,0,0,0-3.065-5.31L86.341.739A4.335,4.335,0,0,0,81.032,3.8L77.367,17.486a1.971,1.971,0,0,1-2.6,1.361,70.807,70.807,0,0,0-45.457,0,1.971,1.971,0,0,1-2.6-1.361L23.043,3.8A4.337,4.337,0,0,0,19.452.629"
-                      transform="translate(-0.014 -0.588)"
-                      fill="#55c0c2"
-                    />
-                  </svg>
-                </div>
-                <h6>Gym & Physical Wellness</h6>
-              </div>
-              <!-- About - Services # 1 -->
-              <div class="services__services--each text-center">
-                <div class="icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="111.971" height="115.522" viewBox="0 0 111.971 115.522">
-                    <g id="Group_157" data-name="Group 157" transform="translate(-1438.029 -875.505)">
-                      <g id="Group_156" data-name="Group 156" transform="translate(1438.029 898)">
-                        <path id="Path_3402" data-name="Path 3402" d="M19.648,69.512" fill="#55c0c2" />
-                        <path
-                          id="Path_3403"
-                          data-name="Path 3403"
-                          d="M8.1,81.1c-.1,4.478,3.584,3.817,3.584,3.817l2.714.031c6.43.075,12.86.206,19.289.238l1.376.005c1.933,0,4.218-.281,4.9-2.5,1.414-4.63-2.119-8.115-5.848-9.84a19.1,19.1,0,0,0-6.76-1.472,43.443,43.443,0,0,0-7.574.013C14.388,71.982,8.241,74.618,8.1,81.1m12.521-8.564a39.4,39.4,0,0,1,5.98,0,17.025,17.025,0,0,1,5.34,1.021c2.947,1.192,5.741,3.6,4.629,6.781-.534,1.528-2.338,1.723-3.864,1.717l-1.087,0c-5.076-.03-10.154-.127-15.231-.186l-2.143-.026a2.381,2.381,0,0,1-2.836-2.631c.105-4.463,4.955-6.269,9.212-6.671"
-                          fill="#55c0c2"
-                        />
-                        <path
-                          id="Path_3404"
-                          data-name="Path 3404"
-                          d="M52.106,34.553c-.781-.118-1.566-.208-2.349-.323a9.293,9.293,0,0,0-3.053.192,9.005,9.005,0,0,0-2.194.646,4.059,4.059,0,0,0-2.05,2.47,17.272,17.272,0,0,0-1.141,4.492c-.132,1.8-.225,3.6-.3,5.4s-.083,3.611-.14,5.416c-.12,3.884-.065,7.769-.218,11.653a67.991,67.991,0,0,1-.585,8.008c-.021.128-.2.688-.261.991-.042-.036-.087-.068-.13-.1a10.66,10.66,0,0,1-.132-1.342c-.166-1.262-.317-2.527-.468-3.792-.362-3.048-.743-6.093-1.079-9.145-.452-4.1-.765-8.188-.9-12.308q-.159-4.776-.311-9.552-.18-5.662-.359-11.325-.151-4.781-.3-9.559c-.045-1.414-.059-2.835-.139-4.248-.036-.629-.09-1.257-.1-1.887a1.91,1.91,0,0,0-.779-1.659,5.287,5.287,0,0,0-2.253,1.1,18.066,18.066,0,0,0-1.507,1.687c-.641,1.1-.45,1.6-.832,2.834-.215.7-2.227,37.664-2.337,39.6-.023.408-.362,12.423-.486,15.6l-.056,0c-.037-3.5-.058-17.859-.1-19.074-.041-1.262-.05-2.525-.086-3.788-.074-2.52-.166-5.039-.231-7.559-.056-2.188-.194-37.245-.218-38.056-.018-.632-.278-.951-.889-.9a3.547,3.547,0,0,0-1.485.421,4.8,4.8,0,0,0-2.5,3.291,16.8,16.8,0,0,0-.907,3.491c-.247,2.232-.309,5.124-.477,7.6-.1,1.507-.117,3.551-.268,5.1-.107,1.1-.667,25.866-.685,26.608-.046,1.845-.1,19.6-.151,23,1.332-.148,2.642-.224,3.88-.244,1.3-.021,2.693.008,4.115.118.005.461.01.742.016.771.007,0,.021-.284.04-.767,4.243.334,8.75,1.4,11.991,4.007a.793.793,0,0,0,.124.291c-.018-.021-.012-.093.006-.188a11.653,11.653,0,0,1,3.432,4.667c1.778,4.4,1.068,11.687-4.8,11.618l-5.608-.065-21.521-.252-1.959-.024c-1.322-.015-2.378-.012-3.4-1.02-1.4-1.385-1.764-4.1-1.83-6a10.152,10.152,0,0,1,1.529-6.239,13.669,13.669,0,0,1,4.318-3.8.682.682,0,0,0,.013.093c0-.023,0-.067,0-.1a25.037,25.037,0,0,1,9.616-2.867c.011.358.018.559.023.559,0-.024.009-.225.014-.563l-.037,0c-.1-3.348-.471-20.765-.533-22.477-.083-2.277-.481-12.506-.531-13.79-.06-1.555-1.587-26.052-1.709-26.8a3.216,3.216,0,0,0-1.332.419c-.532.353-1.069.7-1.572,1.1a3.787,3.787,0,0,0-1.462,2.4c-.112.665-.22,1.33-.313,2-.212,1.516-.411,3.035-.617,4.552-.09.67-.206,1.337-.272,2.009-.2,2.016-.378,4.034-.56,6.053-.137,1.526-.277,3.052-.4,4.58-.17,2.154-.5,14.785-.519,16.951-.011,1.366.221,23.819.2,25.877l-.014.008c-.112-1.111-.635-12.471-.676-13.074-.141-2.094-.767-13.672-.874-15.768-.1-1.916-1.634-28.36-1.644-29.262-.875-.214-2.527,1.384-2.987,1.88A4.755,4.755,0,0,0,2.661,18.48a37.016,37.016,0,0,0-.6,5.91c-.056,1.035-.131,2.068-.2,3.1-.079,1.213-.4,11.932-.425,12.946-.046,1.848-.115,3.7-.182,5.543-.046,1.33-.1,2.66-.157,3.989-.04.969-.1,1.937-.127,2.907-.027,1.15,0,2.3-.037,3.453-.068,1.915-.186,3.828-.26,5.743-.068,1.78-.1,3.561-.16,5.341C.436,69.579.341,71.741.259,73.9c-.046,1.215-.074,2.43-.124,3.643-.037.9-.134,1.8-.135,2.7,0,1.079.048,2.159.122,3.236.063.943.171,1.884.293,2.822a17.747,17.747,0,0,0,1.329,3.939,3.339,3.339,0,0,0,2.569,2.167c.994.21,29.328.691,31.436.6.762-.032,1.521-.137,2.283-.169a30.094,30.094,0,0,1,3.464-.013,7.967,7.967,0,0,0,4.75-1.275,5.286,5.286,0,0,0,2.416-3.392,30.212,30.212,0,0,0,.672-6.509c.032-1.418-.034-2.839-.072-4.259-.042-1.553-.09-3.106-.161-4.659-.079-1.734-.214-3.465-.278-5.2-.088-2.367-.144-4.736-.193-7.1-.047-2.254-.1-4.511-.091-6.766.008-1.892.12-3.784.163-5.677.045-2.025.031-4.052.1-6.076a15.485,15.485,0,0,1,.652-4.457,2.659,2.659,0,0,1,2.378-2c.086-.009.173-.02.259-.033a.385.385,0,0,0,.378-.39.422.422,0,0,0-.365-.483"
-                          fill="#55c0c2"
-                        />
-                        <path id="Path_3405" data-name="Path 3405" d="M92.323,69.512" fill="#55c0c2" />
-                        <path
-                          id="Path_3406"
-                          data-name="Path 3406"
-                          d="M92.192,71.389a43.345,43.345,0,0,0-7.574-.014,19.1,19.1,0,0,0-6.76,1.472c-3.729,1.726-7.262,5.21-5.848,9.841.679,2.222,2.964,2.509,4.9,2.5l1.376-.005c6.429-.032,12.859-.162,19.289-.237l2.714-.032s3.682.662,3.585-3.817c-.141-6.483-6.288-9.119-11.679-9.711m8.369,7.818a2.382,2.382,0,0,1-2.836,2.632l-2.143.025c-5.077.059-10.155.157-15.231.186l-1.087,0c-1.526.006-3.33-.188-3.864-1.717-1.111-3.186,1.682-5.588,4.629-6.781a17.025,17.025,0,0,1,5.34-1.021,39.4,39.4,0,0,1,5.98,0c4.257.4,9.108,2.209,9.212,6.671"
-                          fill="#55c0c2"
-                        />
-                        <path
-                          id="Path_3407"
-                          data-name="Path 3407"
-                          d="M59.865,34.553c.781-.118,1.566-.208,2.349-.323a9.293,9.293,0,0,1,3.053.192,9.005,9.005,0,0,1,2.194.646,4.059,4.059,0,0,1,2.05,2.47,17.272,17.272,0,0,1,1.141,4.492c.132,1.8.225,3.6.295,5.4s.083,3.611.14,5.416c.12,3.884.065,7.769.218,11.653a67.992,67.992,0,0,0,.585,8.008c.021.128.2.688.261.991.042-.036.087-.068.13-.1a10.659,10.659,0,0,0,.132-1.342c.166-1.262.317-2.527.468-3.792.362-3.048.743-6.093,1.079-9.145.452-4.1.765-8.188.9-12.308q.159-4.776.311-9.552.18-5.662.359-11.325.152-4.781.3-9.559c.045-1.414.059-2.835.139-4.248.036-.629.09-1.257.1-1.887a1.91,1.91,0,0,1,.779-1.659,5.287,5.287,0,0,1,2.253,1.1,18.066,18.066,0,0,1,1.507,1.687c.641,1.1.45,1.6.832,2.834.215.7,2.227,37.664,2.337,39.6.023.408.362,12.423.486,15.6l.056,0c.037-3.5.058-17.859.1-19.074.041-1.262.05-2.525.086-3.788.074-2.52.166-5.039.231-7.559.056-2.188.194-37.245.218-38.056.018-.632.278-.951.889-.9a3.547,3.547,0,0,1,1.485.421,4.8,4.8,0,0,1,2.5,3.291,16.8,16.8,0,0,1,.907,3.491c.247,2.232.309,5.124.477,7.6.1,1.507.117,3.551.268,5.1.107,1.1.667,25.866.685,26.608.046,1.845.1,19.6.151,23-1.332-.148-2.642-.224-3.88-.244-1.3-.021-2.693.008-4.115.118-.005.461-.01.742-.016.771-.007,0-.021-.284-.04-.767-4.243.334-8.75,1.4-11.991,4.007a.793.793,0,0,1-.124.291c.018-.021.012-.093-.006-.188a11.653,11.653,0,0,0-3.432,4.667c-1.778,4.4-1.068,11.687,4.8,11.618l5.608-.065,21.521-.252,1.959-.024c1.322-.015,2.378-.012,3.4-1.02,1.4-1.385,1.764-4.1,1.83-6a10.152,10.152,0,0,0-1.529-6.239,13.669,13.669,0,0,0-4.318-3.8.68.68,0,0,1-.013.093c0-.023,0-.067,0-.1a25.037,25.037,0,0,0-9.616-2.867c-.011.358-.018.559-.023.559,0-.024-.009-.225-.014-.563l.037,0c.1-3.348.471-20.765.533-22.477.083-2.277.481-12.506.531-13.79.06-1.555,1.587-26.052,1.709-26.8a3.216,3.216,0,0,1,1.332.419c.532.353,1.069.7,1.572,1.1a3.787,3.787,0,0,1,1.462,2.4c.112.665.22,1.33.313,2,.212,1.516.411,3.035.617,4.552.09.67.206,1.337.272,2.009.2,2.016.378,4.034.56,6.053.137,1.526.277,3.052.4,4.58.17,2.154.5,14.785.519,16.951.011,1.366-.221,23.819-.2,25.877l.014.008c.112-1.111.635-12.471.676-13.074.141-2.094.767-13.672.874-15.768.1-1.916,1.634-28.36,1.644-29.262.875-.214,2.527,1.384,2.987,1.88a4.755,4.755,0,0,1,1.139,2.313,37.016,37.016,0,0,1,.6,5.91c.056,1.035.131,2.068.2,3.1.079,1.213.4,11.932.425,12.946.046,1.848.115,3.7.182,5.543.046,1.33.1,2.66.157,3.989.04.969.1,1.937.127,2.907.027,1.15,0,2.3.037,3.453.068,1.915.186,3.828.26,5.743.068,1.78.1,3.561.16,5.341.076,2.164.171,4.326.253,6.488.046,1.215.074,2.43.124,3.643.037.9.134,1.8.135,2.7,0,1.079-.048,2.159-.122,3.236-.063.943-.171,1.884-.293,2.822a17.747,17.747,0,0,1-1.329,3.939,3.339,3.339,0,0,1-2.569,2.167c-.994.21-29.328.691-31.436.6-.762-.032-1.521-.137-2.283-.169a30.094,30.094,0,0,0-3.464-.013,7.967,7.967,0,0,1-4.75-1.275,5.286,5.286,0,0,1-2.416-3.392,30.212,30.212,0,0,1-.672-6.509c-.032-1.418.034-2.839.072-4.259.042-1.553.09-3.106.161-4.659.079-1.734.214-3.465.278-5.2.088-2.367.144-4.736.193-7.1.047-2.254.1-4.511.091-6.766-.008-1.892-.12-3.784-.163-5.677-.045-2.025-.031-4.052-.1-6.076a15.485,15.485,0,0,0-.652-4.457,2.659,2.659,0,0,0-2.378-2c-.086-.009-.173-.02-.259-.033a.385.385,0,0,1-.378-.39.422.422,0,0,1,.365-.483"
-                          fill="#55c0c2"
-                        />
-                      </g>
-                      <path
-                        id="Path_1791"
-                        data-name="Path 1791"
-                        d="M108.625,33.934,124.8,17.567A10.224,10.224,0,0,0,110.438,3.013l-.907.906a1.277,1.277,0,0,1-1.812,0l-.894-.894A10,10,0,0,0,99.688,0C90.649,0,86.117,11.12,92.5,17.554Z"
-                        transform="translate(1385.123 875.505)"
-                        fill="#55c0c2"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <h6>Child Placement Agency</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Ends here -->
-
-    <!-- Eye Texture Start here -->
-    <section class="eye-texture eye-texture--gray">
-      <div class="image-ratio image-ratio--square">
-        <img src="./assets/img/eye-texture-gray.svg" alt="" />
-      </div>
-    </section>
-    <!-- Eye Texture Ends here -->
-
-    <!-- Our Mission Start here -->
-    <section class="our-mission">
-      <div class="container">
-        <div class="row gy-5 gy-xl-0 gx-xl-5">
-          <div class="col-xl-4">
-            <div class="our-mission__title text-green">
-              <h2>MISSION</h2>
-              <h3 class="h1">+ Values</h3>
-            </div>
-          </div>
-          <div class="col-xl-8">
-            <div class="our-mission__description">
-              <p data-aos="fade-up">Our mission is to provide hope for wholeness to strengthen your quality of life.</p>
-              <p data-aos="fade-up">Wil la mootk Counseling Center has a vision to empower and inspire healing and support on a personal, cultural, and community level.</p>
-              <div class="btn-wrapper">
-                <a href="./staff.html" class="btn btn-primary btn-has-arrow d-none d-lg-block">MEET OUR LICENSED & TRAINED THERAPISTS & COUNSELORS</a>
-                <a href="./staff.html" class="btn btn-primary btn-has-arrow d-lg-none">MEET OUR THERAPISTS</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our Mission Ends here -->
-
-    <!-- Community Start here -->
-    <section class="community">
-      <div class="container">
-        <div class="row gy-5 gy-xl-0">
-          <div class="col-xl-6 order-two">
-            <div class="community__description ms-xl-auto">
-              <p data-aos="fade-up">Community is all about connection. It provides us with a sense of belonging, a powerful sense of support, and purpose. In times of stress, leaning on your community is essential for self-care.</p>
-              <p data-aos="fade-up">Surround yourself with a group of people who embrace and appreciate you as you are.</p>
-              <p data-aos="fade-up">Stay up to date with all our latest and upcoming events to learn how you can participate.</p>
-              <div class="btn-wrapper">
-                <a href="./events.html" class="btn btn-gray btn-has-arrow">UPCOMING EVENTS</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="community__title text-gray">
-              <h2>COMMUNITY OUTREACH &</h2>
-              <h3 class="h1">Support</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Community Patterns -->
-      <div class="community__pattern">
-        <img src="./assets/img/home/community--texture--top-left.svg" alt="" class="community__pattern--each community__pattern--each__1" />
-      </div>
-    </section>
-    <!-- Community Ends here -->
+    <!-- Site Hero Ends here -->
 
     <!-- About Start here -->
-    <section class="about-us">
+    <section class="about">
       <div class="container">
-        <!-- About - Backgrounds -->
-        <div class="about-us__bg">
-          <img class="about-us__bg--image" src="./assets/img/home/about-bg--image.png" alt="" />
-          <img class="about-us__bg--texture" src="./assets/img/home/about-bg--texture.svg" alt="" />
-        </div>
-        <!-- About - Content -->
-        <div class="about-us__content">
-          <div class="about-us__content--title text-gray">
-            <h2>ABOUT</h2>
-            <h3 class="h1">Wil la mootk</h3>
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <div class="about__logo">
+              <a href="#">
+                LOGO
+                <!-- <img src="./logo-path" alt=""> -->
+              </a>
+            </div>
           </div>
-          <div class="about-us__content--description text-gray">
-            <p data-aos="fade-up">
-              On April 16, 2014 we evolved from Children’s Mental Health and became Wil la mootk Counseling Center. Wil la mootk translates to “Place of Healing”. We are an internationally accredited clinic for outpatient behavioral health services.
-              We are a team of professionals that strive earnestly to improve individually and collectively that we may be worthy of our reflection.
-            </p>
-          </div>
-          <div class="about-us__content--links">
-            <ul class="list-reset">
-              <li><p class="h4">CARF ACCREDITED</p></li>
-              <li><p class="h4">FFTA</p></li>
-              <li><p class="h4">PRESSLEY RIDGE CERTITIED</p></li>
-            </ul>
+          <div class="col-lg-8">
+            <div class="about__text-content">
+              <h2>Purdy’s Towing: Providing reliable towing services in Ketchikan for over 20 Years</h2>
+              <p>
+                Navigating tows in the terrain of Southeast Alaska for over two decades, Purdy’s Towing in Ketchikan is your trusted partner for dependable service in challenging environments, prioritizing safety, care for our community and its
+                people, ready to assist you whenever you need a lift.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="about__pattern">
+        <img src="./assets/img/about-pattern.svg" alt="" />
       </div>
     </section>
     <!-- About Ends here -->
 
-    <!-- Exciting News Start here -->
-    <section class="exciting-news">
+    <!-- Services Starts here -->
+    <div class="services">
       <div class="container">
-        <div class="row gy-5 gy-xl-0 gx-xl-5">
-          <div class="col-xl-4">
-            <div class="exciting-news__title text-gray">
-              <h2>Exciting</h2>
-              <h3 class="h1">News!</h3>
+        <div class="row gy-5 gx-xl-5">
+          <div class="col-lg-5">
+            <div class="services__title">
+              <h2 class="h1">Our Versatile Fleet Ready for Any Towing Challenge</h2>
             </div>
           </div>
-          <div class="col-xl-8">
-            <div class="exciting-news__description">
-              <p data-aos="fade-up">On February 22, 2023, Wil La Mootk Counseling Center became the first tribally owned and operated Child Placement Agency in the State of Alaska and the Nation!</p>
-              <p data-aos="fade-up">This historical and monumental event is just first of many for Wil La Mootk Counseling Center.</p>
-              <p data-aos="fade-up">We will continue to demonstrate our commitment to our quality of services on the highest level And embrace the concept of whole-person client centered healing.</p>
-              <div class="btn-wrapper">
-                <a href="./contact-us.html" class="btn btn-gray btn-has-arrow">CONNECT WITH US</a>
+          <div class="col-lg-7">
+            <div class="services__text-content">
+              <p>With a diverse fleet, whether its a residential car to diesel truck, our team of skilled and dedicated problem solvers — 20-year veteran towing company in Ketchikan, Alaska, is equipped to handle any towing need.</p>
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <p><b>Towing Services:</b></p>
+                  <ul>
+                    <li>Cars to 4x4 Diesel Trucks</li>
+                    <li>Commercial Vehicles & Box Trucks</li>
+                    <li>Buses</li>
+                    <li>Recreational Vehicles</li>
+                    <li>Tanker Trucks</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <p><b>Towing Beyond Vehicles:</b></p>
+                  <ul>
+                    <li>Safes</li>
+                    <li>Lumber</li>
+                    <li>Watercrafts</li>
+                    <li>Small Sheds & Metal Containers</li>
+                    <li>Industrial Equipment</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Exciting News Ends here -->
+    </div>
+    <!-- Services Ends here -->
 
-    <!-- Eye Texture Start here -->
-    <section class="eye-texture eye-texture--green">
-      <div class="image-ratio image-ratio--square">
-        <img src="./assets/img/eye-texture-gray.svg" alt="" />
+    <!-- Additional Services Start here -->
+    <div class="additional-services">
+      <div class="container">
+        <div class="row gy-5 gx-xl-5">
+          <div class="col-lg-5">
+            <div class="additional-services__image">
+              <div class="image-ratio image-ratio--square">
+                <img src="./assets/img/services.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="additional-services__text-content">
+              <h2 class="h1">Quick & Dependable Roadside Assistance & Beyond</h2>
+              <ul>
+                <li>Jumpstarts</li>
+                <li>Lock-Outs (Unlocking your vehicle)</li>
+                <li>Roadside Tire Changes</li>
+                <li>Unwanted Vehicle Removal</li>
+                <li>Private Property Monitoring for Parking Violators</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- Eye Texture Ends here -->
+    </div>
+    <!-- Additional Services Ends here -->
+
+    <!-- Testimonials Start here -->
+    <div class="testimonials">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-7">
+            <div class="testimonials__title">
+              <h2 class="h1">Hear It From Our Customers</h2>
+            </div>
+            <div class="testimonials__all">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonials__all--each">
+                      <p>
+                        Dear Purdy’s Towing Man, Thanks so much for coming to the “rescue” after hours, Even though I ultimately didn’t end up needing a tow/lift. <br /><br />
+                        It was much appreciated!
+                      </p>
+                      <h6>- Kelly C.</h6>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__all--each">
+                      <p>
+                        Dear Purdy’s Towing Man, Thanks so much for coming to the “rescue” after hours, Even though I ultimately didn’t end up needing a tow/lift. <br /><br />
+                        It was much appreciated!
+                      </p>
+                      <h6>- Kelly C.</h6>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__all--each">
+                      <p>
+                        Dear Purdy’s Towing Man, Thanks so much for coming to the “rescue” after hours, Even though I ultimately didn’t end up needing a tow/lift. <br /><br />
+                        It was much appreciated!
+                      </p>
+                      <h6>- Kelly C.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="testimonials__image">
+              <div class="image-ratio image-ratio--square">
+                <img src="./assets/img/testimonial.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__bg">
+        <img src="./assets/img/testimonials-pattern.svg" alt="" />
+      </div>
+    </div>
+    <!-- Testimonials Ends here -->
 
     <!-- Site Footer Start here -->
     <footer class="site-footer">
-      <div class="site-footer__nav">
+      <div class="site-footer__inner">
         <div class="container">
-          <div class="row gy-5 gy-xl-0">
-            <div class="col-xl-6 col-left">
-              <div class="row gy-5 gy-md-0 align-items-xl-center">
-                <div class="col-md-6 col-left-left">
-                  <div class="site-footer__links">
-                    <h6>CONTACT US</h6>
-                    <div class="site-footer__links--inner">
-                      <p>
-                        1271 8th Avenue <br />
-                        Metlakatla, Alaska 99926
-                      </p>
-                      <p>
-                        PO Box 8 Metlakatla, <br />
-                        Alaska 99926
-                      </p>
-                      <p>
-                        p. (907) 886-6911 | f. (907) 866-6917 <br />
-                        Tiffiney L. McKeehan, L.C. S. W., Director
-                      </p>
-                      <p>HOURS</p>
-                      <p>
-                        Monday - Friday <br />
-                        8:00am - 4:30pm
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-left-right">
-                  <div class="site-footer__links">
-                    <h6>
-                      WAP GYILKS AMANIISGN <br />
-                      FITNESS CENTER HOURS
-                    </h6>
-                    <div class="site-footer__links--inner">
-                      <p>p. (907) 886-3144</p>
-                      <p>
-                        Monday - Friday <br />
-                        6:00am - 9:00pm
-                      </p>
-                      <p>
-                        Saturday <br />
-                        12:00pm - 4:00pm
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="row gy-5">
+            <div class="col-lg-3">
+              <div class="site-footer__logo">
+                <a href="#">
+                  LOGO
+                  <!-- <img src="./logo-path" alt=""> -->
+                </a>
               </div>
             </div>
-            <div class="col-xl-6 col-right">
-              <div class="row gy-5 gy-xl-0">
-                <div class="col-md-6 col-right-left">
-                  <div class="site-footer__links site-footer__links--end">
-                    <h6>RESOURCES</h6>
-                    <div class="site-footer__links--inner">
-                      <ul class="list-reset">
-                        <li><a href="#">Adult Intake Packet</a></li>
-                        <li><a href="#">Minor Intake Packet</a></li>
-                        <li><a href="#">Client Rights and Responsibilities</a></li>
-                        <li><a href="#">Free Coloring Book</a></li>
-                        <li><a href="#">BHA Training Program</a></li>
-                        <li><a href="#">Mental Health Screening Tool</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-right-right">
-                  <div class="site-footer__links site-footer__links--end">
-                    <h6>ABOUT WIL LA MOOTK</h6>
-                    <div class="site-footer__links--inner">
-                      <ul class="list-reset">
-                        <li><a href="staff.html">Our Team</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="#">Confidentially Policy</a></li>
-                        <li><a href="#">Feedback & Suggestions Survey</a></li>
-                        <li><a href="#">Metlakatla.com</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-lg-9">
+              <div class="site-footer__contact">
+                <h6 class="copy-sm">Contact Us:</h6>
+                <a href="tel:+19072476481">907-247-6481</a>
+                <p class="copy-sm">Late Hours: Leave a Voice Message</p>
               </div>
             </div>
           </div>
@@ -458,25 +235,39 @@
       </div>
       <div class="site-footer__copyright">
         <div class="container">
-          <p>© 2023 Metlakatla Indian Community. All Rights Reserved. Designed & Developed by North CreativeTM Design Co., LLC</p>
+          <ul>
+            <li>© All Rights Reserved. Designed & Developed by</li>
+            <li>
+              <svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.068" height="22.771" viewBox="0 0 42.068 22.771">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_18" data-name="Rectangle 18" width="42.068" height="22.771" fill="#6c6a6a" />
+                  </clipPath>
+                </defs>
+                <g id="Group_9" data-name="Group 9" transform="translate(0 0)" clip-path="url(#clip-path)">
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M41.339,9.486a4.236,4.236,0,0,0,.448-.593c.136-.2.136-.327.239-.4s0-.458-.1-.591-.273-.132-.855-.561a5.605,5.605,0,0,1-1.233-1.611c-.171-.3-.138-.593-.616-.99A5.758,5.758,0,0,0,38.09,4.05c-.242-.13-.549-.625-.722-.723s-.341-.164-.341-.363-.069-1.021-.241-1.12a.756.756,0,0,0-.514-.131,3.287,3.287,0,0,1-.477.033l-.413.064-.341-.164s.138-.494-.067-.593a2.377,2.377,0,0,0-.516-.23.908.908,0,0,0-.41.065s-.274.1-.412.164a4.2,4.2,0,0,1-.513.164,10.47,10.47,0,0,0-1.13-.2h-1.88c-.481,0-.378-.33-.927-.362S28.026.327,27.648.327,26.792.262,26.415.262a2.6,2.6,0,0,0-.889.1,5.2,5.2,0,0,1-1.712.329c-.822,0-1.542,0-2.292-.067s-1.2-.3-1.614-.3S19.4.3,18.3.3,15.564.1,15.049.066a5.3,5.3,0,0,0-1.607,0C12.825.2,11.8.593,11.559.624a6.349,6.349,0,0,0-1.61.923A19.324,19.324,0,0,0,7.826,3.129c-.445.494-1.573,1.284-1.813,1.876A12.283,12.283,0,0,1,4.371,7.28c-.413.458-.548.1-.722,1.086S3.24,9.454,3.036,10.8a11.724,11.724,0,0,1-1.029,2.9c-.239.659-.649,1.943-.819,2.472S.878,17.622.5,17.918a.971.971,0,0,0-.41,1.219c.239.494.206.659.374,1.053s.446.923.652,1.284.171.659.445.693a5.208,5.208,0,0,0,1.013.148c.512,0,.846-.019,1.161-.032.377-.019,1.251.015,1.42.015a.987.987,0,0,0,.394-.131s-.138-.66-.375-.792a3.518,3.518,0,0,0-1.114-.428c-.273,0-.752-.493-.685-.758s.052-.379.087-.478c.135-.392.155-.676.5-.871s.994-.2,1.3-.66.651-.494,1.2-1.447a25.485,25.485,0,0,1,1.78-2.3,12.594,12.594,0,0,1,1.1-1.223,4.623,4.623,0,0,1,.754.693c.1.2.581,1.549,1.058,1.843S12.552,16.963,13,17.325a3.523,3.523,0,0,1,1.132,1.414,2.741,2.741,0,0,1,.2,1.088c.033.628.1,1.089.513,1.386s.731.522,1.094.791a3.865,3.865,0,0,0,2.525.768c.273.005.9-.194,1.169-.194s.311-.279.653-.279.907-.033.907-.033c.009-.077.514-.643-.512-1.053a5.645,5.645,0,0,0-1.371-.48c-.2-.02-.154.035-.462-.163s-.375-.164-.546-.4-.309-.347-.172-.675a4.161,4.161,0,0,0-.033-1.713,18.669,18.669,0,0,0-.377-1.877,6.068,6.068,0,0,1-.239-1.582.715.715,0,0,1,.273-.625s2.225-1.515,2.672-1.712a.385.385,0,0,1,.513.526c-.138.228-.207.428-.378.758a2.094,2.094,0,0,0-.171,1.121,3.915,3.915,0,0,0,.412,1.843,8.572,8.572,0,0,1,.89,2.634c.1.792-.136,1.255.135,1.681s.446.461.961.758a7.932,7.932,0,0,1,1.368.989c.31.3.41.428.754.428s1.062-.035,1.439,0a8.428,8.428,0,0,0,1.2.035c.822-.069,1.078.132.735-.563a2.172,2.172,0,0,0-1.148-.807,7.44,7.44,0,0,1-1.026-.163c-.238-.067-.649,0-.685-.528a15.155,15.155,0,0,0-.273-1.6s-.1-1.252-.068-1.778a4.909,4.909,0,0,1,.2-1.517c.174-.361.412-1.052.412-1.052a3.089,3.089,0,0,0,1.2,1.185,8.074,8.074,0,0,1,1.852,1.547,9.5,9.5,0,0,0,2.088,1.219s.99-.033.99.2,0,1.022-.206,1.086-.548-.031-.2.4.254.4.187.625.222.823.5.792a1.685,1.685,0,0,0,1.061-.692,4.935,4.935,0,0,0,.581-1.416,5.8,5.8,0,0,0,.206-1.188c.1-1.152.241-1.184-.206-1.645s-1.232-1.352-1.61-1.746-1.161-1.386-1.4-1.712-.516-.561-.243-1.188.687-.953.756-1.514-.033-.858.1-1.154a1.6,1.6,0,0,1,.824-.625,5.378,5.378,0,0,0,.545-.164l.619-.032a7.808,7.808,0,0,0,1.061.164c.309,0,.239-.132.788.1s.708.274,1.152.47a3.452,3.452,0,0,0,.617.21,6.023,6.023,0,0,0,1.025.371,8.641,8.641,0,0,1,1.129.418,4.132,4.132,0,0,0,.927.275.767.767,0,0,0,.556-.3c.071-.132.206-.363.206-.363s.413-.46.546-.592"
+                    transform="translate(0 0)"
+                    fill="#6c6a6a"
+                  />
+                </g>
+              </svg>
+            </li>
+            <li>North CreativeTM Design Co., LLC in Ketchikan, Alaska</li>
+          </ul>
         </div>
       </div>
     </footer>
-    <!-- Site Footer Start here -->
+    <!-- Site Footer Ends here -->
   </body>
-
-  <!-- >>>>>> jQuery v3.3.1 <<<<<<< -->
-  <script src="./assets/jquery/jquery.min.js"></script>
 
   <!-- >>>>>> Bootstrap v5.0.2 <<<<<<< -->
   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- >>>>>> Lenis Js - Smooth Scroll <<<<<<< -->
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
-
-  <!-- >>>>>> GSAP - Scroll Animation <<<<<<< -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!-- >>> Swiper v10 | Slider <<< -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- >>>>>> Bootstrap v5.0.2 <<<<<<< -->
   <script src="./assets/js/app.js"></script>

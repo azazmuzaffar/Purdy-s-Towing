@@ -1,206 +1,51 @@
 .site-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+    padding: 26px 0 24px;
+    background-color: $purple;
+    color: $white;
+
+    @include lg {
+        padding: 22px 0 20px;
+    }
+
+    @include xs {
+        padding: 20px 0 18px;
+    }
 
     .container {
-        @include md {
-            align-items: start;
+        max-width: 100%;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        line-height: 1;
+        font-weight: 700;
+
+        img,
+        svg {
+            width: 100%;
+            height: auto;
         }
     }
 
-    .navbar {
-        padding: 0;
+    &__actions {
+        p {
+            line-height: 1;
 
-        .site-logo {
-            width: 100%;
-            max-width: 206px;
-            background: $white;
-            box-shadow: 0px 0px 8px #00000029;
-            border-radius: 0 0 13px 13px;
-            padding: 20px 16px 24px;
-            transition: .4s all ease;
-            position: relative;
-            z-index: 2;
+            i {
+                margin-right: 43px;
 
-            @include lg {
-                max-width: 186px;
-            }
-
-            @include xs {
-                max-width: 111px;
-                padding: 8px 10px 10px 10px;
-                border-radius: 0 0 9px 9px;
-            }
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .navbar-toggler {
-            padding: 20px;
-            background: $white;
-            box-shadow: 0px 0px 8px #0000001c;
-            border: none;
-            outline: none;
-            margin-top: 25px;
-
-            @include xs {
-                padding: 12px;
-            }
-
-            @include xxs {
-                padding: 10px;
-            }
-
-            &__inner {
-                position: relative;
-                z-index: 2;
-                width: 30px;
-                height: 23px;
-                padding: 0;
-            }
-
-            span {
-                display: block;
-                height: 3px;
-                width: 100%;
-                background: $black;
-                transition: .3s all ease;
-
-                &:not(:first-child) {
-                    margin-top: 7px;
-                }
-            }
-
-            &[aria-expanded="true"] {
-                .navbar-toggler__inner {
-                    span {
-                        &:nth-child(1) {
-                            transform: rotate(45deg) translate(7px, 6px);
-                        }
-
-                        &:nth-child(2) {
-                            opacity: 0;
-                        }
-
-                        &:nth-child(3) {
-                            transform: rotate(-45deg) translate(8px, -7px);
-                        }
-                    }
-                }
-            }
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-            background: $white;
-            padding: 13px 13px 13px 48px;
-            box-shadow: 0px 0px 8px #0000001c;
-            border-radius: 77px;
-
-            @include lg {
-                padding: 11px 11px 11px 32px;
-            }
-
-            @include md {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                overflow-x: hidden;
-                overflow-y: auto;
-                background: $white;
-                padding: 90px 20px 0;
-                padding-top: calc(var(--header-height) + 40px);
-                display: flex;
-                flex-direction: column;
-                transform: translateX(-100%);
-                transition: .3s all ease;
-                border-radius: 0;
-            }
-
-            ul {
-                display: flex;
-                align-items: center;
-
-                @include md {
-                    display: block;
-                    width: 100%;
-                    max-width: 600px;
-                    margin: 0 auto;
-                }
-
-                @include xxs {
-                    max-width: 335px;
-                }
-
-                li {
-                    &:not(:last-child) {
-                        margin-right: 22px;
-
-                        @include lg {
-                            margin-right: 18px;
-                        }
-
-                        @include md {
-                            margin-right: 0;
-                        }
-                    }
-
-                    &:last-of-type {
-                        padding-left: 20px;
-
-                        @include md {
-                            padding-left: 0;
-                            margin-top: 48px;
-                        }
-                    }
-
-                    @include md {
-                        &:not(:last-child) {
-                            border-bottom: 1px solid #ebebeb;
-                        }
-                    }
-
-                    .nav-link {
-                        font-size: 20px;
-                        line-height: 1.2;
-                        color: #575757;
-
-                        @include lg {
-                            font-size: 18px;
-                        }
-
-                        @include md {
-                            font-size: 20px;
-                            padding: 16px 0;
-                        }
-
-                        @include xl {
-                            font-size: 18px;
-                        }
-
-                        &:hover,
-                        &.active {
-                            color: $green;
-                        }
-                    }
-                }
-            }
-        }
-
-        .navbar-collapse {
-            &.show {
-                .navbar-nav {
-                    @include md {
-                        transform: translateX(0);
-                    }
+                @include xs {
+                    display: none;
                 }
             }
         }

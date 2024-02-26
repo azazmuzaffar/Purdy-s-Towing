@@ -1,130 +1,120 @@
 .site-footer {
-    color: $white;
+    position: relative;
 
-    &__nav {
-        background: $green;
-        padding: 92px 0 45px;
+    &__logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        @include xs {
-            padding: 60px 0;
+        a {
+            font-size: 42px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+
+            @include xs {
+                font-size: 32px;
+            }
+
+            img,
+            svg {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 
-    &__links {
-        h6 {
-            font-size: 21px;
-            line-height: 1.3;
-            margin-bottom: 28px;
-            @extend .font-bold;
+    &__inner {
+        padding: 38px 0 80px;
+        background-color: $purple;
+        color: $white;
 
-            @include xxs {
-                font-size: 20px;
+        @include sm {
+            padding: 32px 0 56px;
+        }
+
+        @include xs {
+            padding: 24px 0 40px;
+        }
+    }
+
+    &__contact {
+        h6.copy-sm {
+            font-weight: 700;
+            margin-bottom: 12px;
+
+            @include xs {
+                margin-bottom: 8px;
             }
         }
 
-        &--inner {
+        a {
+            font-size: 30px;
+            font-weight: 700;
 
-            li,
-            p {
-                font-size: 17px;
-                line-height: 1.352;
-            }
-
-            p {
-                &:not(:last-child) {
-                    margin-bottom: 23px;
-
-                    @include xs {
-                        margin-bottom: 18px;
-                    }
-                }
-            }
-
-            ul {
-                li {
-                    &:not(:last-child) {
-                        margin-bottom: 24px;
-
-                        @include xs {
-                            margin-bottom: 16px;
-                        }
-                    }
-
-                    a {
-                        color: $white;
-
-                        &:hover {
-                            text-underline-offset: 4px;
-                            text-decoration: underline;
-                        }
-                    }
-                }
+            @include xs {
+                font-size: 24px;
             }
         }
 
-        &--end {
-            position: relative;
+        p.copy-sm {
+            font-weight: 600;
+            margin-top: 20px;
 
-
-            @include xxl-up {
-                padding-left: 80px;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 1px;
-                    height: 340px;
-                    background: $white;
-                }
+            @include xs {
+                margin-top: 12px;
             }
         }
     }
 
     &__copyright {
-        padding: 27px 0 25px;
-        background: $darkgreen;
+        padding: 28px 0;
+        background-color: $gray;
+
+        @include sm {
+            padding: 22px 0;
+        }
 
         @include xs {
-            padding: 24px 0;
+            padding: 16px 0 20px;
         }
 
-        p {
-            font-size: 17px;
-            line-height: 1.352;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            @include sm {
+                gap: 6px;
+            }
 
             @include xs {
-                font-size: 16px;
+                flex-direction: column;
                 text-align: center;
+                gap: 4px;
             }
-        }
-    }
 
-    @include xxl-up {
-        .col-left {
-            width: 48%;
-        }
+            li {
+                font-size: 18px;
 
-        .col-right {
-            width: 52%;
-        }
+                @include sm {
+                    font-size: 16px;
 
-        .col-left-left {
-            width: 52%;
-        }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
 
-        .col-left-right {
-            width: 48%;
-        }
-
-        .col-right-left {
-            width: 55%;
-        }
-
-        .col-right-right {
-            width: 45%;
+                @include xs {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
